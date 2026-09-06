@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/splide-core.min.css"><!-- Splideの最低限のスタイル(カスタマイズが必要な場合はこのファイルを選ぶと良い) -->
+    <link rel="stylesheet" href="./assets/css/style.css"><!-- Splideを任意の見た目にスタイリング -->
+    <script src="./assets/js/splide.min.js" defer></script><!-- Splide本体 -->
+    <script src="./assets/js/main.js" defer></script><!-- Splideの初期化や振る舞いをカスタマイズ -->
+    <title>Splideサンプル</title>
+</head>
+
+<body>
+    <header>
+        <h1>ドイツ旅行の切れ端</h1>
+    </header>
+    <main>
+        <section class="section">
+            <div class="section__inner">
+                <div class="content">
+                    <div class="content__head">
+                        <h2>旅行時の断片</h2>
+                        <p>ドイツ旅行時に見たもので印象的だったものから一部ピックアップしてスライドにしました</p>
+                    </div>
+                    <div class="content__main">
+                        <div class="splide" aria-label="Splideの基本的なHTML">
+                            <!-- スライドのルート要素。必ず簡潔なラベルをつける(aria-label、またはaria-labelledby) -->
+                            <div class="splide__track">
+                                <ul class="splide__list">
+                                    <li class="splide__slide">
+                                        <p>リンゴジュースとチョコバー。ベルリン行きの機内にて。</p>
+                                        <img src="./assets/images/apple-juice-and-chocolate-bar.JPG" alt="">
+                                    </li><!-- スライド1つ分 -->
+                                    <li class="splide__slide">
+                                        <p>ステーキ。ベルリンの宿泊先の目の前にあったイタリアンレストランにて。</p>
+                                        <img src="./assets/images/steak.JPG" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>さちこ寿司。和名だったので写真に収めた。ベルリン市内にて。</p>
+                                        <img src="./assets/images/sachiko-sushi.JPG" alt="">
+                                    </li>
+                                    <li class="splide__slide">
+                                        <p>路面電車(トラム)。ベルリン市内にて。</p>
+                                        <img src="./assets/images/tram.JPG" alt="">
+                                    </li>
+                                </ul>
+                            </div>
+                            <!-- 左右の矢印をカスタマイズする場合htmlファイル上で下記を設置する -->
+                            <div class="splide__arrows my-splide-arrows">
+                                <button class="splide__arrow splide__arrow--prev my-splide-prev">
+                                    Prev
+                                </button>
+                                <button class="splide__arrow splide__arrow--next my-splide-next">
+                                    Next
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <div class="mov-area">
+            <div class="mov-area__inner">
+                <video src="./assets/movies/MOV_0164.mp4" controls></video>
+            </div>
+        </div>
+    </main>
+    <footer></footer>
+
+</body>
+
+</html>

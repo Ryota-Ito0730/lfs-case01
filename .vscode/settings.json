@@ -1,0 +1,18 @@
+{
+    "liveSassCompile.settings.formats": [
+    {
+      "format": "expanded", // 出力されるCSSの形式。"expanded"は通常の読みやすい形式。"compressed"は圧縮された形式。
+      "extensionName": ".css", // 出力されるファイルの拡張子。通常は.css。
+      "savePath": "~/../css" // .scssファイルからの相対的な出力先のフォルダを指定。nullだと同階層、'/'はルートディレクトリを意味する。
+    }
+  ],
+  "liveSassCompile.settings.autoprefix": [
+    "> 10%",          // 全体のユーザーの10%以上が使用しているブラウザバージョンに対応
+    "last 2 versions" // 各ブラウザの最新2バージョンに対応
+  ],
+  "liveSassCompile.settings.excludeList": [
+    ".vscode/**" // .vscodeフォルダ内のすべてのファイルやサブフォルダをコンパイルから除外
+  ],
+  "liveSassCompile.settings.generateMap": false, // ソースマップ(.map)ファイルの生成を無効にする。
+  "liveSassCompile.settings.includeItems": []    // 特定のアイテムをコンパイルに含めるリスト。現在は空。
+}

@@ -1,0 +1,91 @@
+@charset "UTF-8";
+*, *::before, *::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-size: 62.5%;
+  line-height: 1.5;
+  color: #333;
+  letter-spacing: 0.04em;
+}
+
+body {
+  font-size: 1.6rem;
+}
+
+/* リセット */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+/*サンプル設置のための簡易装飾*/
+.section__inner {
+  padding: 16px 0;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: auto;
+}
+
+.content {
+  padding: 0 16px;
+  background: #e3e3e3;
+}
+.content__main {
+  padding: 16px 0;
+}
+
+/* Splideへのカスタムスタイルここから ===== */
+/* ルート要素 */
+.splide {
+  margin: auto;
+}
+.splide__slide img {
+  width: 100%;
+  height: auto;
+}
+.splide__pagination {
+  gap: 16px;
+  padding: 8px 0 0;
+}
+.splide__pagination__page {
+  background: #95a5a6;
+  border: 0;
+  border-radius: 50%;
+  display: inline-block;
+  height: 16px;
+  margin: 0 0.1rem;
+  padding: 0;
+  position: relative;
+  -webkit-transition: background-color 0.2s ease, color 0.2s ease;
+  transition: background-color 0.2s ease, color 0.2s ease;
+  width: 16px;
+  cursor: pointer;
+}
+.splide__pagination__page.is-active {
+  background: rgb(255, 196, 0);
+  pointer-events: none;
+}
+
+/* Splideへのカスタムスタイルここまで ===== */
+/*
+動画エリア
+*/
+.mov-area__inner {
+  width: 100%;
+  max-width: 640px;
+  margin: auto;
+}
+.mov-area__inner video {
+  width: 100%;
+  height: auto;
+}
